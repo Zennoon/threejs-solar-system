@@ -11,7 +11,7 @@ const scene = new THREE.Scene();
 // initialize the texture loader
 const textureLoader = new THREE.TextureLoader();
 const cubeTextureLoader = new THREE.CubeTextureLoader();
-cubeTextureLoader.setPath(`threejs-solar-system/textures/cubeMap/`);
+cubeTextureLoader.setPath(`textures/cubeMap/`);
 const backgroundCubeMap = cubeTextureLoader.load([
   'px.png',
   'nx.png',
@@ -22,18 +22,18 @@ const backgroundCubeMap = cubeTextureLoader.load([
 ])
 
 // add textures
-const sunTexture = textureLoader.load(`threejs-solar-system/textures/2k_sun.jpg`);
-const mercuryTexture = textureLoader.load(`threejs-solar-system/textures/2k_mercury.jpg`);
-const venusTexture = textureLoader.load(`threejs-solar-system/textures/2k_venus_surface.jpg`);
-const earthTexture = textureLoader.load(`threejs-solar-system/textures/2k_earth_daymap.jpg`);
-const moonTexture = textureLoader.load(`threejs-solar-system/textures/2k_moon.jpg`);
-const marsTexture = textureLoader.load(`threejs-solar-system/textures/2k_mars.jpg`);
-const jupiterTexture = textureLoader.load(`threejs-solar-system/textures/2k_jupiter.jpg`);
-const saturnTexture = textureLoader.load(`threejs-solar-system/textures/2k_saturn.jpg`);
-const saturnRingTexture = textureLoader.load(`threejs-solar-system/textures/2k_saturn_ring_alpha.png`);
-const uranusTexture = textureLoader.load(`threejs-solar-system/textures/uranusmap.jpg`);
-const uranusRingTexture = textureLoader.load(`threejs-solar-system/textures/uranusringcolour.jpg`);
-const neptuneTexture = textureLoader.load(`threejs-solar-system/textures/2k_neptune.jpg`);
+const sunTexture = textureLoader.load(`textures/2k_sun.jpg`);
+const mercuryTexture = textureLoader.load(`textures/2k_mercury.jpg`);
+const venusTexture = textureLoader.load(`textures/2k_venus_surface.jpg`);
+const earthTexture = textureLoader.load(`textures/2k_earth_daymap.jpg`);
+const moonTexture = textureLoader.load(`textures/2k_moon.jpg`);
+const marsTexture = textureLoader.load(`textures/2k_mars.jpg`);
+const jupiterTexture = textureLoader.load(`textures/2k_jupiter.jpg`);
+const saturnTexture = textureLoader.load(`textures/2k_saturn.jpg`);
+const saturnRingTexture = textureLoader.load(`textures/2k_saturn_ring_alpha.png`);
+const uranusTexture = textureLoader.load(`textures/uranusmap.jpg`);
+const uranusRingTexture = textureLoader.load(`textures/uranusringcolour.jpg`);
+const neptuneTexture = textureLoader.load(`textures/2k_neptune.jpg`);
 
 scene.background = backgroundCubeMap;
 // add stuff here
